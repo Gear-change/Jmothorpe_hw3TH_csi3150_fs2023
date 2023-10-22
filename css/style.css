@@ -1,0 +1,643 @@
+/*reset everything*/
+html{
+    font-size: 60%;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    max-width: 100%;
+}
+
+/*for the overall layout*/
+
+#main {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "window-1"
+    "window-2"
+    "window-3"
+    "window-4"
+    "window-5"
+    "window-6"
+    "window-7"
+    "window-8";
+}
+#window1-back2 {
+  grid-area: window-1;
+}
+#window1-back{
+  grid-area: window-1;
+  /*Photo by <a href="https://unsplash.com/@vorosbenisop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Benjamin Voros</a> on <a href="https://unsplash.com/photos/snow-mountain-under-stars-phIFdC6lA4E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/benjamin-voros-phIFdC6lA4E-unsplash.jpg)  center center/cover no-repeat;
+}
+#window-1 { 
+  
+  height: 60.60vw;
+  grid-area: window-1;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto min-content min-content auto; 
+  gap: 5vw 0px ; 
+  grid-template-areas: 
+    "img-custom-1"
+    "title"
+    "w1-text"
+    "page-1"; 
+}
+#img-custom-1 {
+  height: 16.16vw;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(4, auto); 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w1-p1"
+    "w1-p2"
+    "w1-p3"
+    "w1-p4"; 
+  justify-content: center; 
+  align-content: end; 
+  justify-items: center; 
+  align-items: stretch; 
+  justify-self: center; 
+  align-self: end; 
+  grid-area: img-custom-1; 
+}
+#w1-p1 {
+  justify-items: center;
+  grid-area: w1-p1;
+  height: 5vw;
+}
+#w1-p2 { 
+  grid-area: w1-p2; 
+}
+#w1-p3 { grid-area: w1-p3; }
+#w1-p4 { grid-area: w1-p4; }
+#title {
+  justify-self: center;
+  grid-area: title;
+}
+#w1-text {
+  color:#fff;
+  height: min-content;
+  justify-self: center; 
+  grid-area: w1-text; 
+}
+#page-1 {
+  justify-self: center; 
+  align-self: start; 
+  grid-area: page-1; 
+}
+#window2-back2 {
+  grid-area: window-2;
+
+}
+#window2-back {
+  grid-area: window-2;
+  /*Photo by <a href="https://unsplash.com/@haseebjkhan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Haseeb Jamil</a> on <a href="https://unsplash.com/photos/snow-capped-mountain-at-night-3s85IxVDyXE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/haseeb-jamil-3s85IxVDyXE-unsplash.jpg)  center center/cover no-repeat;
+}
+#window-2 {
+  margin-top: 5.21vw;
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  width: 89.12vw;
+  height: 41.91vw;
+  grid-area: window-2;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w2-header w2-text"
+    "w2-header w2-text"
+    ". w2-button"; 
+}
+#w2-header { 
+  width: 29.02vw;
+  grid-area: w2-header;
+}
+#w2-button { 
+  grid-area: w2-button;
+  height: 3.53vw;
+  width: 11.61vw;
+}
+
+#w2-text { 
+  width: 41.26vw;
+  grid-area: w2-text; 
+}
+#window3-back2 {
+  grid-area: window-3;
+}
+#window3-back{
+  grid-area: window-3;
+  /*Photo by <a href="https://unsplash.com/@leyy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Leyre</a> on <a href="https://unsplash.com/photos/snow-covered-mountain-during-daytime-nW3diVSG3wQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/leyre-nW3diVSG3wQ-unsplash.jpg)  center center/cover no-repeat local;
+} 
+#window-3 {
+  margin-top: 5.66vw;
+  max-height: 60.60vw;
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  width: 89.12vw;
+  height: 67.17vw;
+  grid-area: window-3;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1.5fr 0.5fr; 
+  gap: 0px 1.36vw; 
+  grid-template-areas: 
+    "w3-head w3-head w3-head"
+    "w3-b1 w3-b2 w3-b3"
+    ". w3-b4 ."; 
+}
+#w3-head { grid-area: w3-head; }
+#w3-b1 {
+  border-color: transparent;
+  
+  background: url(../img/johny-goerend-HlYWdYBKpHo-unsplash.jpg)  center center/cover no-repeat local;
+  height: 35.35vw;
+  display: grid; 
+  grid-template-columns:  2.49vw 1fr 2.49vw; 
+  grid-template-rows: 1fr auto 2.49vw auto 2.49vw; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". w3-t1 ."
+    ". . ."
+    ". w3-dw1 ."
+    ". . ."; 
+  justify-items: end; 
+  grid-area: w3-b1; 
+}
+#w3-t1 {
+  color:#fff;
+   grid-area: w3-t1; 
+  align-self: end;}
+#w3-dw1 { 
+  align-self: flex-end;
+  justify-self: left;
+  grid-area: w3-dw1; 
+}
+#w3-b2 {
+  border-color: transparent;
+  background: url(../img/karsten-winegeart-Vx_c-ieKyNM-unsplash.jpg)  center center/cover no-repeat local;
+  height: 35.35vw;
+  display: grid; 
+  grid-template-columns:  2.49vw 1fr 2.49vw; 
+  grid-template-rows: 1fr auto 2.49vw auto 2.49vw; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". w3-t2 ."
+    ". . ."
+    ". w3-dw2 ."
+    ". . ."; 
+  grid-area: w3-b2; 
+}
+#w3-t2 { grid-area: w3-t2; 
+  align-self: end;}
+#w3-dw2 { 
+  align-self: flex-end;
+  justify-self: left;
+  grid-area: w3-dw2;
+}
+#w3-b3 {
+  border-color: transparent;
+  background: url(../img/guille-pozzi-wguqf_tabDM-unsplash.jpg)  center center/cover no-repeat local;
+  height: 35.35vw;
+  display: grid; 
+  grid-template-columns:  2.49vw 1fr 2.49vw; 
+  grid-template-rows: 1fr auto 2.49vw auto 2.49vw; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". w3-t3 ."
+    ". . ."
+    ". w3-dw3 ."
+    ". . ."; 
+  justify-items: start; 
+  grid-area: w3-b3; 
+}
+#w3-t3 { 
+  color:#f7fF00 ;
+  grid-area: w3-t3;
+  align-self: end; 
+}
+#w3-dw3 { 
+  align-self: flex-end;
+  justify-self: left;
+  grid-area: w3-dw3;
+ }
+#w3-b4 { 
+  height: 3.53vw;
+  width: 11.61vw;
+  grid-area: w3-b4;
+  justify-self: center;
+  align-self: center;
+}
+#window4-back2 {
+  grid-area: window-4;
+}
+#window4-back {
+  grid-area: window-4;
+  /*Photo by <a href="https://unsplash.com/@8moments?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simon Berger</a> on <a href="https://unsplash.com/photos/landscape-photography-of-mountains-twukN12EN7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/simon-berger-twukN12EN7c-unsplash.jpg)  center center/cover no-repeat local;
+} 
+#window-4 {
+  margin-top: 5.21vw;
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  width: 89.12vw;
+  height: 53.53vw;
+  grid-area: window-4;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1.5fr 0.5fr 1.5fr 0.5fr 1.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w4-head w4-t1"
+    "w4-head w4-t2"
+    "w4-head w4-t3"
+    "w4-head w4-t4"
+    ". w4-t5"; 
+}
+#w4-head {
+  grid-area: w4-head; 
+}
+#w4-t1 { 
+  grid-area: w4-t1; 
+}
+#w4-t2 {
+  grid-area: w4-t2; 
+}
+#w4-t3 { grid-area: w4-t3; }
+#w4-t4 {
+  grid-area: w4-t4; 
+}
+#w4-t5 { grid-area: w4-t5; }
+#window5-back2 {
+  grid-area: window-5;
+}
+#window5-back {
+  grid-area: window-5;
+  /*Photo by <a href="https://unsplash.com/@antoskli?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Antony Sklivagkos</a> on <a href="https://unsplash.com/photos/mountain-peak-under-blue-sky-iTYShprNeRE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/antony-sklivagkos-iTYShprNeRE-unsplash.jpg)  center center/cover no-repeat local;
+} 
+  
+#window-5 {
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  width: 89.12vw;
+  height: 39.39vw;
+  grid-area: window-5;
+  display: grid; 
+  grid-template-columns: 0.50vw 1fr 1fr 1fr 1fr 0.50vw; 
+  grid-template-rows: 1fr; 
+  gap: 0px 5.05vw; 
+  grid-template-areas: 
+    ". w5-1 w5-2 w5-3 w5-4 ."; 
+  align-content: center; 
+}
+#w5-1 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.5fr .5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w5-h1"
+    "w5-t1"; 
+  align-self: center; 
+  grid-area: w5-1; 
+}
+#w5-h1 {
+  align-self: end; 
+  grid-area: w5-h1; 
+}
+#w5-t1 {
+  align-self: start; 
+  grid-area: w5-t1; 
+}
+#w5-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.5fr .5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w5-h2"
+    "w5-t2"; 
+  align-self: center; 
+  grid-area: w5-2; 
+}
+#w5-h2 {
+  align-self: end; 
+  grid-area: w5-h2; 
+}
+#w5-t2 {
+  align-self: start; 
+  grid-area: w5-t2; 
+}
+#w5-3 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.5fr .5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w5-h3"
+    "w5-t3"; 
+  align-self: center; 
+  grid-area: w5-3; 
+}
+#w5-h3 {
+  align-self: end; 
+  grid-area: w5-h3; 
+}
+#w5-t3 {
+  align-self: start; 
+  grid-area: w5-t3; 
+}
+#w5-4 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.5fr .5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w5-h4"
+    "w5-t4"; 
+  align-self: center; 
+  grid-area: w5-4; 
+}
+#w5-h4 {
+  align-self: end; 
+  grid-area: w5-h4; 
+}
+#w5-t4 {
+  align-self: start; 
+  grid-area: w5-t4; 
+}
+/*
+#window6-back2 {
+  background-color:#4949491e;
+  backdrop-filter: brightness(0.5) contrast(50%);
+}*/
+#window6-back2{
+  grid-area: window-6;
+}
+#window6-back {
+  grid-area: window-6;
+  /*Photo by <a href="https://unsplash.com/@inggridkoe?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Inggrid Koe</a> on <a href="https://unsplash.com/photos/gray-forest-with-fog-kbKEuU-YEIw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/inggrid-koe-kbKEuU-YEIw-unsplash.jpg)  center center/cover no-repeat local;
+} 
+#window-6 { 
+  margin-top: 4.53vw;
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  max-width: 89.12vw;
+  height: 47.47vw;
+  grid-area: window-6;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1.5fr 0.5fr 0.5fr; 
+  gap: 3.03vw 3.03vw; 
+  grid-template-areas: 
+    "w6-p1"
+    "w6-t1"
+    "w6-t2"
+    "page-6"; 
+  justify-items: center; 
+ }
+#w6-p1 {
+  width: 16.16vw;
+  border-radius: 50%;
+  align-self: end; 
+  grid-area: w6-p1; 
+}
+#w6-t1 { grid-area: w6-t1; }
+#w6-t2 { grid-area: w6-t2; }
+#page-6 {
+  height:3.03vw;
+  align-self: start; 
+  grid-area: page-6;
+  border: transparent;
+  border-bottom: 5.55vw transparent;
+}
+
+#window-7 {
+  grid-area: window-7;
+  display: grid; 
+  width: 100vw;
+  grid-template-columns: repeat(4, 25vw); 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "w7-p1 w7-p2 w7-p3 w7-p4";  
+}
+#w7-p1 {
+  display: grid; 
+  
+  background: url(../img/chuttersnap-rLm4Wq96h_0-unsplash.jpg)  center center/cover no-repeat; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "left-arrow"; 
+  grid-area: w7-p1; 
+  
+}
+#left-arrow { 
+  justify-self: start;
+  grid-area: left-arrow; 
+}
+#w7-p2 { grid-area: w7-p2; }
+#w7-p3 { grid-area: w7-p3; }
+#w7-p4 {
+  
+  display: grid;
+  background: url(../img/jordan-steranka-0Q_R7AADczE-unsplash.jpg)  center center/cover no-repeat;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "right-arrow"; 
+  grid-area: w7-p4; 
+}
+#right-arrow { 
+  justify-self: end;
+  grid-area: right-arrow; 
+}
+.background-filter {
+  margin: 0;
+  margin-top: 0;
+  background-color:#49494905;
+  backdrop-filter: brightness(0.75) contrast(75%);
+}
+#window8-back2 {
+  margin-top: auto;
+  grid-area: window-8;
+  backdrop-filter: brightness(0.6) contrast(50%);
+}
+#window8-back {
+  /*Photo by <a href="https://unsplash.com/@z734923105?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jerry Zhang</a> on <a href="https://unsplash.com/photos/snow-covered-mountain-during-daytime-SJGiS1JzUCc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  background: url(../img/jerry-zhang-SJGiS1JzUCc-unsplash.jpg)  center center/cover no-repeat local;
+  grid-area: window-8;
+  margin-top: 0;
+} 
+#window-8 {
+  
+  margin-top: 7.48vw;
+  margin-left: 5.44vw;
+  margin-right: 5.44vw; 
+  max-width: 89.12vw;
+  grid-area: window-8;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 1.13vw 0px; 
+  grid-template-areas: 
+    "w8-head w9-in-name"
+    "w8-p2 w9-in-email"
+    "w8-p2 w9-in-message"
+    "w9-icons w9-in-message"
+    ". w9-b-submit"; 
+}
+#w8-head {
+  justify-self: start; 
+  align-self: end; 
+  grid-area: w8-head; 
+}
+#w8-p2 {
+  justify-self: start; 
+  align-self: start; 
+  grid-area: w8-p2; 
+}
+#w9-icons {
+  display: grid; 
+  grid-template-columns: 2.72vw 2.72vw 2.72vw 2.72vw 6.06vw; 
+  grid-template-rows: 2.72vw; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "fbicon twicon insicon pinicon linicon"; 
+  justify-content: space-evenly; 
+  align-content: start; 
+  justify-items: start; 
+  align-items: start; 
+  justify-self: stretch; 
+  align-self: stretch; 
+  grid-area: w9-icons; 
+}
+#fbicon { grid-area: fbicon; }
+#twicon { grid-area: twicon; }
+#insicon { grid-area: insicon; }
+#pinicon { grid-area: pinicon; }
+#linicon { grid-area: linicon; }
+#w9-in-name {
+  text-justify: 1.36vw;
+  height: 4.08vw;
+  align-self: end; 
+  grid-area: w9-in-name; 
+}
+#w9-in-email { 
+  grid-area: w9-in-email; 
+}
+#w9-in-message {
+  align-items: start; 
+  grid-area: w9-in-message;
+}
+#w9-b-submit {
+  height: 2.94vw;
+  width: 9.52vw;
+  justify-self: start; 
+  align-self: start; 
+  grid-area: w9-b-submit; 
+}
+
+  /* fix the images*/
+.down-arrow {
+  background-color: transparent;
+  border-color: transparent ;
+  height: 5vmin;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.text-1{
+  color: #fff;
+  font-size: medium;
+}
+.text-2{
+  color: #fff;
+  font-size: 1.6vw;
+}
+.header-2{
+  color: #EEC733;
+  font-size: 5.05vw;
+}
+.custom-1{
+  font-size: 1.6vw;
+}
+.custom-2{
+  font-size: 3.3vw;
+}
+.header-1{
+  color: #EEC733;
+  font-size: 8.61vw;
+}
+.header-3{
+  color: #EEC733;
+  font-size: 4.583vw;
+}
+.text-3{
+  font-size: 2.5vw;
+}
+.text-header {
+  color: #fff;
+  font-size: 2.5vw;
+}
+.circle-background{
+  height: 16.16vw;
+  width: 16.16vw;
+  
+  color:white;
+  background-size: 150%;
+  background-image: linear-gradient(#000, #000);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 5vw solid #000;
+  border-radius: 50%;
+}
+.hor-arrow{
+  height: 2.52vw;
+  align-self: center;
+}
+.button-2{
+  color: #fff ;
+  border: transparent;
+  background-color:#F6C10d;
+  font-size: 1.36vw;
+}
+.button-1{
+  color: #000000 ;
+  border: transparent;
+  background-color: #F6C10D;
+  font-size: 1.36vw;
+}
+input, textarea {
+  color: #BDB1B0;
+  border-color: #BDB1B0;
+  background-color: transparent;
+  text-align: left;
+  padding: 0.90vw 0.90vw;
+  font-size: 1.36vw;
+}
