@@ -540,7 +540,6 @@ html{
 #pinicon { grid-area: pinicon; }
 #linicon { grid-area: linicon; }
 #w9-in-name {
-  text-justify: 1.36vw;
   height: 4.08vw;
   align-self: end; 
   grid-area: w9-in-name; 
